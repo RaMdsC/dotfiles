@@ -1,0 +1,5 @@
+# Login-specific initialization
+# Nothing for now
+
+# Load script for interactive-specific initialization
+[ -r ~/.bashrc ] && . ~/.bashrc

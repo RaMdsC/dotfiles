@@ -1,0 +1,6 @@
+# Miscellaneous
+function cdp() { cd $WORKSPACE; }
+
+# Tmux
+function tmuxa() { tmux attach-session -t $1; }
+function tmuxk() { tmux kill-session -t $1; }

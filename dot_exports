@@ -1,0 +1,3 @@
+# User workspace
+[ ! -v WORKSPACE ] && export WORKSPACE=$HOME
+export PATH=$WORKSPACE/bin:$PATH

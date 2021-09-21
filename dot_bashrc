@@ -1,0 +1,14 @@
+# Load script for system-specific initialization
+[ -r ~/.bash_system ] && . ~/.bash_system
+
+# Load initialization scripts
+for f in ~/.{exports,aliases,functions}; do
+    [ -r $f ] && . $f
+done
+
+# Set useful Bash options
+# See https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
+shopt -s nocaseglob histappend cdspell autocd globstar
+
+# Go to workspace
+cd $WORKSPACE
