@@ -1,6 +1,9 @@
 # Miscellaneous
 function cdp() { cd $WORKSPACE; }
 
+# Git
+function gre() { GIT_SEQUENCE_EDITOR="sed -i -re 's/^pick $1/e $1/'" git rebase -i $1^; }
+
 # Tmux
 function tmuxa() { tmux attach-session -t $1; }
 function tmuxk() { tmux kill-session -t $1; }
