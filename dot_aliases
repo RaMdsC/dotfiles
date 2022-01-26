@@ -34,7 +34,7 @@ alias gstd="gst drop"
 alias gstl="gst list"
 alias gstp="gst pop"
 alias gsts="gst show -p"
-alias gt="git log --tags --simplify-by-decoration --pretty=\"format:%ai %d\""
+alias gt="git tag --list --sort=-taggerdate --format=\"%(taggerdate:short) %(refname:strip=2)\""
 
 # Miscellaneous
 alias e="exit"
